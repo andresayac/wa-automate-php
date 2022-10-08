@@ -1,0 +1,7 @@
+{
+    "require": {
+        "chrome-php/chrome": "^1.6",
+        "simplusid/qrcode-terminal": "^1.0",
+        "aferrandini/phpqrcode": "^1.0"
+    }
+}
