@@ -3,10 +3,9 @@ require "lib/Whatsapp.class.php";
 
 
 
-$bot = new Whatsapp();
-
+$wa_automate = new Whatsapp();
 
 // $bot->getScreenShot();
 
-$qr_whatsapp = $bot->getQrCode();
-//echo $bot->getQrTerminal($qr_whatsapp);
+$qr_whatsapp = $wa_automate->getQrCode();
+echo $wa_automate->getQrTerminal($qr_whatsapp);

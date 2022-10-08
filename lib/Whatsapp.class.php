@@ -20,7 +20,7 @@ class Whatsapp
             'keepAlive' => true,
         ]);
         $this->whatsapp_page = $this->browser->createPage();
-        $this->whatsapp_page->navigate('https://web.whatsapp.com/')->waitForNavigation(Page::DOM_CONTENT_LOADED, 10000);
+        $this->whatsapp_page->navigate('https://web.whatsapp.com/')->waitForNavigation();
         $this->init();
     }
 
@@ -37,7 +37,7 @@ class Whatsapp
     function getScreenShot(string $path = '/')
     {
         $path = $path ?? '/';
-        $this->whatsapp_page->screenshot()->saveToFile('bar.png');
+        $this->whatsapp_page->screenshot()->saveToFile('screenshot.png');
     }
 
     function getQrTerminal($qr_whatsapp)
