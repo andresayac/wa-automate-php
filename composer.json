@@ -1,7 +1,9 @@
 {
     "require": {
         "chrome-php/chrome": "^1.6",
+        "aferrandini/phpqrcode": "^1.0",
         "simplusid/qrcode-terminal": "^1.0",
-        "aferrandini/phpqrcode": "^1.0"
+        "evenement/evenement": "^3.0",
+        "react/promise": "^2.9"
     }
 }
